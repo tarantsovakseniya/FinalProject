@@ -17,7 +17,7 @@ public enum Singleton {
         mappersCache.put(String.class, StringMapper.class);
         mappersCache.put(Character.class, StringMapper.class);
         //NumberMapper
-        mappersCache.put(Integer.class, NumberMapper.class);
+        mappersCache.put(Byte.class, NumberMapper.class);
         mappersCache.put(Short.class, NumberMapper.class);
         mappersCache.put(Integer.class, NumberMapper.class);
         mappersCache.put(Long.class, NumberMapper.class);
