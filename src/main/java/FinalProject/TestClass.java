@@ -3,7 +3,7 @@ package FinalProject;
 import java.io.File;
 import java.util.ArrayList;
 
-public class A {
+public class TestClass {
     interface iMyInter {
         void get();
     }

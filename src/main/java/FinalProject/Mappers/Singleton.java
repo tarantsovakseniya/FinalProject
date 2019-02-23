@@ -1,4 +1,4 @@
-package FinalProject;
+package FinalProject.Mappers;
 
 import FinalProject.Mappers.*;
 
