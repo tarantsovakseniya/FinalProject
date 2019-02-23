@@ -1,4 +1,4 @@
-package FinalProject;
+package FinalProject.Writers;
 
 import java.io.IOException;
 import java.io.Writer;

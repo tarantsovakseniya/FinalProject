@@ -1,4 +1,6 @@
-package FinalProject;
+package FinalProject.Mappers;
+
+import FinalProject.Writers.MyJsonWriter;
 
 import java.io.IOException;
 import java.util.*;
@@ -11,6 +13,7 @@ public class CollectionMapper implements JsonMapper<Collection<?>> {
         try {
             writer.writeArrayBegin();
             for (Object objElement : obj) {
+//              if(objElement.getClass().isInstance(Collection.class))
                 if (objElement.getClass().getName().contains("java")) {
                     //check affiliations with class Boolean
                     if (objElement.getClass().equals(Boolean.class)) {

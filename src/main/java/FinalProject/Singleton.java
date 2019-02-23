@@ -1,5 +1,7 @@
 package FinalProject;
 
+import FinalProject.Mappers.*;
+
 import java.util.*;
 
 public enum Singleton {

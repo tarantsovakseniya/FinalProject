@@ -1,4 +1,7 @@
-package FinalProject;
+package FinalProject.Mappers;
+
+import FinalProject.MyJsonIgnore;
+import FinalProject.Writers.MyJsonWriter;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

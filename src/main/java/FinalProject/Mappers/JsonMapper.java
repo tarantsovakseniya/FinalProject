@@ -1,4 +1,6 @@
-package FinalProject;
+package FinalProject.Mappers;
+
+import FinalProject.Writers.MyJsonWriter;
 
 @FunctionalInterface
 public interface JsonMapper<T> {

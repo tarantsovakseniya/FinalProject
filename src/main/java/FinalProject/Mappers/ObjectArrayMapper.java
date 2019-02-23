@@ -1,9 +1,9 @@
-package FinalProject;
+package FinalProject.Mappers;
+
+import FinalProject.Writers.MyJsonWriter;
 
 import java.io.IOException;
 import java.util.*;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class ObjectArrayMapper implements JsonMapper<Object[]> {
 

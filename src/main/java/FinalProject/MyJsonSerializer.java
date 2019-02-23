@@ -1,5 +1,9 @@
 package FinalProject;
 
+import FinalProject.Mappers.*;
+import FinalProject.Writers.IndentedJsonWriter;
+import FinalProject.Writers.MyJsonWriter;
+
 import java.io.Serializable;
 import java.io.StringWriter;
 import java.io.Writer;
@@ -57,7 +61,7 @@ public class MyJsonSerializer implements Serializable {
             } else if (objMapper.equals(PrimitiveArrayMapper.class)) {
                 new PrimitiveArrayMapper().write((Object[]) obj, writer);
             } else if (objMapper.equals(ObjectArrayMapper.class)) {
-                new ObjectArrayMapper().write((Object[]) obj, writer);
+                new ObjectArrayMapper().write((Object[]) obj, writer); //дженерик и инстанс оф
             }
             //write POJO-custom class
         } else {
