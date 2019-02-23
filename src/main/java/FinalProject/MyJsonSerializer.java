@@ -20,7 +20,6 @@ public class MyJsonSerializer implements Serializable {
         } else {
             StringWriter writerAppend = new StringWriter();
             lock.lock();
-            // Интерфейс Appendable должен быть реализован любым классом, экземпляры которого предназначаются, чтобы получить отформатированный вывод от a Formatter.
             serialize(obj, (Appendable) writerAppend);
             lock.unlock();
             return writerAppend.toString();
@@ -61,7 +60,7 @@ public class MyJsonSerializer implements Serializable {
             } else if (objMapper.equals(PrimitiveArrayMapper.class)) {
                 new PrimitiveArrayMapper().write((Object[]) obj, writer);
             } else if (objMapper.equals(ObjectArrayMapper.class)) {
-                new ObjectArrayMapper().write((Object[]) obj, writer); //дженерик и инстанс оф
+                new ObjectArrayMapper().write((Object[]) obj, writer);
             }
             //write POJO-custom class
         } else {

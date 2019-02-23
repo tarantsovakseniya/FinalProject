@@ -66,7 +66,7 @@ public class IndentedJsonWriter extends MyJsonWriter {
         } else if (currentLevelOblect == 1) {
             writer.write("," + "\n" + "\t");
         }
-        //новая
+        //new
         else if (currentLevelArray ==  0){
             writer.write("," + "\n" );
         } else

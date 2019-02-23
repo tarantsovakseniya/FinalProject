@@ -23,7 +23,7 @@ public class MyJsonWriter {
         writer.append("{");
     }
 
-    //если предыдущий символ – запятая, удаляет его
+    //delete previous symbol and close }
     void writeObjectEnd() throws IOException {
         writer.append("\b");
         writer.append("}");
@@ -33,30 +33,30 @@ public class MyJsonWriter {
         writer.append("[");
     }
 
-    //если предыдущий символ – запятая, удаляет его
+    //delete previous symbol and close ]
     void writeArrayEnd() throws IOException {
         writer.append("\b");
         writer.append("]");
     }
 
-    //данный метод принимает стрингу, при необходимости ескейпит внутри символы, добавляет с обеих сторон «“»
+    //write String
     void writeString(String s) throws IOException {
         writer.append("\"");
         writer.append(s);
         writer.append("\"");
     }
 
-    //записывает в низ лежащий поток число
+    //write numbers
     void writeNumber(Number n) throws IOException {
         writer.append(n.toString());
     }
 
-    //добавляет запятую
+    //add ","
     void writeSeparator() throws IOException {
         writer.append(",");
     }
 
-    //добавляет двоеточие «:»
+    //add ":"
     void writePropertySeparator() throws IOException {
         writer.append(":");
     }

@@ -4,6 +4,6 @@ import FinalProject.Writers.MyJsonWriter;
 
 @FunctionalInterface
 public interface JsonMapper<T> {
-    //метод, принимает обьект и проверяет его принадлежность к мапперу
+    //method get Object and write it into correct JSON form
     void write(T obj, MyJsonWriter writer);
 }
